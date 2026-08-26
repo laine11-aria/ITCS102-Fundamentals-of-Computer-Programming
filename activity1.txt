@@ -1,0 +1,23 @@
+print("""Lourdes maria elaine a. javelosa
+Lourdes maria elaine a. javelosa
+Lourdes maria elaine a. javelosa
+Lourdes maria elaine a. javelosa
+Lourdes maria elaine a. javelosa
+Lourdes maria elaine a. javelosa
+Lourdes maria elaine a. javelosa
+Lourdes maria elaine a. javelosa
+Lourdes maria elaine a. javelosa
+Lourdes maria elaine a. javelosa
+
+
+
+bachelor of science in information technology
+bachelor of science in information technology
+bachelor of science in information technology
+bachelor of science in information technology
+bachelor of science in information technology
+bachelor of science in information technology
+bachelor of science in information technology
+bachelor of science in information technology
+bachelor of science in information technology
+bachelor of science in information technology""")

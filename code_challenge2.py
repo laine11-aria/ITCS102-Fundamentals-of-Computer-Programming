@@ -1,5 +1,5 @@
 #VARIABLES
-amount = 21539
+amount = 19863
 
 print("Money to deposit --->", amount)
 

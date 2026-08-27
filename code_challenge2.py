@@ -24,7 +24,7 @@ n = amount // 1
 amount = amount % 1
 
 
-print("the amount to be deposit has")
+print("Ph denomination")
 
 
 print("1000 -", s)

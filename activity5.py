@@ -14,7 +14,7 @@ print("The sum of",a," +", b," is",sum)
 print("The difference of",a," -", b," is",diff)
 print("The product of",a," x", b," is",multiply)
 print("The quotient of",a," /", b," is",divide)
-print("The remainder of",a," %", b," %",modulus)
+print("The remainder of",a," %", b," is",modulus)
 print("The  of exponent",a," **", b," is",exponent)
 print("The floor division of",a," //", b," is",floor_div)
 

@@ -5,24 +5,23 @@ print("Money to deposit --->", amount)
 
 #computation here
 s = amount // 1000
-amount = amount % 1000
-p = amount // 500
-amount = amount % 500
-i = amount // 200
-amount = amount % 200
-d = amount // 100
-amount = amount % 100
-e = amount // 50
-amount = amount % 50
-r = amount // 20
-amount = amount % 20
-m = amount // 10
-amount = amount % 10
-a = amount // 5
-amount = amount % 5
-n = amount // 1
-amount = amount % 1
-
+amount1 = amount % 1000
+p = amount1 // 500
+amount2 = amount1 % 500
+i = amount2 // 200
+amount3 = amount2 % 200
+d = amount3 // 100
+amount4 = amount3 % 100
+e = amount4 // 50
+amount5 = amount4 % 50
+r = amount5 // 20
+amount6 = amount5 % 20
+m = amount6 // 10
+amount7 = amount6 % 10
+a = amount7 // 5
+amount8 = amount7 % 5
+n = amount8 // 1
+amount9 = amount8 % 1
 
 print("Ph denomination")
 

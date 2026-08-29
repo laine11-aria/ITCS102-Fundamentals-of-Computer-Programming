@@ -6,7 +6,7 @@ sum = a + b
 diff = a - b
 multiply = a * b
 divide = a / b
-modulus = a & b
+modulus = a % b
 exponent = a ** b
 floor_div = a // b
 

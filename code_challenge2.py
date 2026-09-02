@@ -1,7 +1,7 @@
 #VARIABLES
-amount = 19863
-
+amount = eval(input("Enter Money to DEPOSIT ---->>> ")) 
 print("Money to deposit --->", amount)
+#print(type(amount))
 
 #computation here
 s = amount // 1000
@@ -23,6 +23,7 @@ amount8 = amount7 % 5
 n = amount8 // 1
 amount9 = amount8 % 1
 
+
 print("Ph denomination")
 
 
@@ -35,6 +36,12 @@ print("20 -", r)
 print("10 -", m)
 print("5 -", a)
 print("1 -", n)
+
+# int(), eval(), type()
+
+
+
+
 
 
 

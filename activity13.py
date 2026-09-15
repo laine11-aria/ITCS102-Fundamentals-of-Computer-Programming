@@ -17,7 +17,7 @@ if age >= 21 and is_employed == True:
 
         print("Pwede na sa", interest_rate_tier1, "% interest")
 
-    elif credit_score >= 600:
+    elif credit_score >= 600  and age <750 :
         base_interest_rate_tier2 = 8.0
 
         if annual_income < 40000:

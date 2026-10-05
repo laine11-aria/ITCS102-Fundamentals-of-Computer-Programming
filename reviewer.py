@@ -1,69 +1,62 @@
-s
-#Inputs
-owner_age = int(input("Input age: "))
-monthly_revenue = float(input('Your Monthly Revenue: '))
-credit_score = int(input("Your Credit_score: "))
-years_in_business = float(input('How many years are you in the business? '))
-has_defaults = bool(input("Had previous default/bankruptcy? "))
-collateral_name = input("Type of Collateral: "))
-collateral_value = float(input("Value of your Collateral: "))
+#inputs
+age = int(input("Enter your age ---> "))
+reven = float(input("Enter monthly revenue ---> $"))
+crdts = int(input("Enter your credit score ---> "))
+yrsinb = int(input("years in business ---> "))
+hasdef = bool(input("Def history ---> "))
+colls = input("Enter your collateral ---> ")
+coll_val = float(input("Collateral value ---> $"))
 
-max_limit = 0
+max_loan = 0
 base_fee = 0.0
-#Baseline Requirements
-if owner_age >= 21 and years_in_business and has_defaults == False:
-    print("Passed Baseline Requirement")
+#baseline
+if age >= 21 and yrsinb >= 2 and hasdef:
+    print("Baseline requirement pass")
 
-    max_limit = monthly_revenue * 3
-    print("max loan for high credit score is ", max_limit)
-    print("highb credit score of 720")
-    base_fee = 0.0
+    max_loan = reven * 3
+    print("max loan for high crdit score is ", max_loan)
+    print("high credit score of 720")
+    base_fee - 0.0
 
-    #tier 1
-    if credit_score >= 720:
-        print("high credit sore of 720")
-        if monthly_revenue >= 5000:
-            base_fee = max_limit * 0.015
-            print("base rate is ", base_fee)
-        else:
-            base_fee = max_limit * 0.025
-            print("base rate is ", base_fee)
-        #collateral 
-        if collateral_value >= max_limit:
-            print("Collateral ", collateral_name, "--Accepted")
-        else:
-            print("Collateral not accepted")
+    #tier1
+    if crdts >= 720: 
+        print("high credit score of 720")
+        if reven >= 5000:
+            base_fee = max_loan * 0.02
+            print("base fee rate is ", base_fee)
+        else: 
+            base_fee = max_loan * 0.025
+            print("base fee rate is ", base_fee)
+        #collateral
+        if coll_val >= max_loan:
+            print("Collateral", colls, "--Accepted")
+        else: 
+            print("Collateral not Accepted")
 
         #surcharge
-        surcharge = max_limit * base_fee
-        if collateral_value % 5000 != 0:
+        surcharge = max_loan * base_fee
+        if coll_val % 5000 != 0:
             surcharge += 250
 
-    #tier 2
-    elif credit_score <= 620 and credit_score <720:
-        max_limit = monthly_revenue * 1.5
-        print("max loan is set to ", max_limit)
-        if years_in_business >= 5:
-            base_fee = max_limit * 0.02
+    #tier2
+    elif crdts <= 620 and crdts <720: 
+        max_loan = reven * 1.5
+        print("max loan is set to ", max_loan)
+        if yrsinb >= 5:
+            base_fee = max_loan * 0.02
             print("base fee rate is ", base_fee)
         else:
-            base_fee = max_limit * 0.035
+            base_fee = max_loan *0.035
             print("base fee rate is ", base_fee)
 
-        if collateral_value >= max_limit:
-            print("Collateral ", collateral_name, "--Accepted")
-        else:
-            print("Collateral not accepted")
-    #tier 3
-    elif credit_score < 620:
-        print("Credit score too low for a loan")
-    else:
+        if coll_val >= max_loan:
+            print("Collateral", colls, "--Accepted")
+        else: 
+            print("Collateral not Accepted")
+
+    #tier3
+    elif crdts < 620:
         print("Not tier 1")
 
-else:
-    print("Rejected: High Risk Application or Ineligible Owner")
-
-
-
-
-
+else: 
+    print("REJECTED: High risk application or ineligable")

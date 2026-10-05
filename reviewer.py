@@ -5,7 +5,7 @@ monthly_revenue = float(input('Your Monthly Revenue: '))
 credit_score = int(input("Your Credit_score: "))
 years_in_business = float(input('How many years are you in the business? '))
 has_defaults = bool(input("Had previous default/bankruptcy? "))
-collateral_name = str(input("Type of Collateral: "))
+collateral_name = input("Type of Collateral: "))
 collateral_value = float(input("Value of your Collateral: "))
 
 max_limit = 0

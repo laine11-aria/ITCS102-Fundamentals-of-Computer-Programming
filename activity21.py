@@ -27,7 +27,7 @@ print()
 print()
 print()
 
-#part@
+#part2
 print("JEEPNEY SIMULATOR INTERACTIVE")
 print()
 

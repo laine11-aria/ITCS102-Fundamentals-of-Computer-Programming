@@ -37,14 +37,15 @@ SEATS = 6
 FARE = 13
 total = 0
 
+print('Sakay:', passengers)
+print(len(passengers), 'of', SEATS, 'seats')
+print('1 Sakay  2 Priority seat  3 Para po!')
+print('4 Baba sa pinto  5 Baba sa harap')
+print('6 Seat check  7 Balikan  8 Exit')
+print()
+          
 while True:
-    print()
-    print('Sakay:', passengers)
-    print(len(passengers), 'of', SEATS, 'seats')
-    print('1 Sakay  2 Priority seat  3 Para po!')
-    print('4 Baba sa pinto  5 Baba sa harap')
-    print('6 Seat check  7 Balikan  8 Exit')
-    choice=input('Choice ')
+    choice=input('Choice: ')
 
 
     
@@ -62,14 +63,14 @@ while True:
         if len(passengers) == SEATS:
             print('Puno Na!')
         else:
-            name=input('Name: ')
+            name = input('Name: ')
             passengers.insert(0, name)
             total = total + FARE
             print(name, 'took the priority seat.')
     
 
     elif choice == '3':
-        name=input('Who is getting off?: ')
+        name = input('Who is getting off?: ')
         if name in passengers:
             passengers.remove(name)
             print(name, 'got off, INGAT!')
@@ -78,10 +79,10 @@ while True:
 
 
     elif choice == '4':
-        if len(passengers)==0:
+        if len(passengers) == 0:
             print('Jeepney is empty.')
         else:
-            left=passengers.pop()
+            left = passengers.pop()
             print(left, 'got off at the door')
 
 
@@ -89,7 +90,7 @@ while True:
         if len(passengers) == 0:
             print('The Jeepney is empty.')
         else:
-            front=passengers.pop(0)
+            front = passengers.pop(0)
             print(front, "got off at the front.")
 
 
@@ -110,4 +111,3 @@ while True:
 
     else:
         print('Invalid Choice')
-

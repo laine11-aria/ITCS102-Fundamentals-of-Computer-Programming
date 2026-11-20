@@ -1,59 +1,47 @@
-#2d dimnesional list 
-#Naruto = ['Frog Kumite', 'Sage of 6 Path', 'Rasenshuriken']
-#Sasuke = ['Chidori', 'Amentojakara', 'Fire Release']
-#Sakura = ['Healing Ability', 'Cherry Blossom Impact', '']
-#Naruto_shippuden = [Naruto, Sasuke, Sakura]
-#luma = ["Dragon_ball", "One Piece", Naruto_shippuden, "Bleach"]
-#bago = ["Blue Lock", "Jujutsu Kaisen", "Demon Slayer"]
-#korean = ["Solo leveling"]
-
-#anime = {"Old School: ":luma, "New:":bago, "manhwa:":korean}
-
-#print(anime["Old School: "])
-#print(anime["Old School: "][0][-1])
-
 #Heroes I use in MLBB
-#level 4 (desc or skill name)
 
-Aamon = ["Duke of Shards", "Head of House Paxley"]
-Gusion = ["Cursed Child", "Holy Blade"]
-Alucard = ["Demon Hunter", "Lightborn: Striker"]
+#level 4 === Heroes Description or title ===
 
-Dyrroth
-Yu_Zhong 
-Zilong
+Aamon = ["After the late Duke Paxley was presumed dead, Aamon was not only left with the responsibilities of the entire family, but also his young brothers and sisters", "Head of House Paxley; Duke of Shards"]
+Gus = ["House Paxley Cursed Child", "Holy Blade"]
+Alu = ["Demon Hunter", "Lightborn: Striker"]
 
-Tigreal
-Floryn 
-Rafaela
+Dyr = ["Born as a prince of the Moniyan Empire", "Prince of the Abyss"]
+Yz = ["Black Dragon", "Great Dragon's Successor"]
+Zil = ["Great Dragon's Spear", "Faithful Warrior of Cadia"]
 
-Claude 
-Lesley
-Granger
+Tig = ["Warrior of Dawn", "Exalted Knight of Moniyan"]
+Flor = ["Nature's Spirit", "Guardian of the Enchanted Forest"]
+Rafa = ["Wings of Holiness", "Angel of Light"]
 
-Nana
-Valentina
-Luo_Yi 
+Claude = ["Growing up in such a place as an orphan, Claude soon learned how to fight, lie, gamble and steal: tricks of the trade he had to rely upon to survive", "Has a monkey as his parter in crime called Dexter"]
+Lesley = ["Deadly Sniper", "Adopted Daughter of Vance Family"]
+Granger = ["Death Chanter: plays poor violin music, use to distract enemies off guard before shooting them", "Demon Hunter of the Monastery"]
 
-Julian 
-Guinevere
-Saber
+Nana = ["Sweet Leonin", "Feline Sorceress of the Forest"]
+Valen = ["Prophetess of the Night", "The Former Duchess of House Paxley, the one who outlived her death"]
+Luo_Yi = ["Yin-Yang Geomancer", "Master of Yin-Yang"]
 
-#level 3 roles
-Jungler 
-Exp 
-Roam
-Mid
-Gold
-Flex 
+Julian = ["Scarlet Raven", "Warrior of the Church"]
+Guin = ["Ms. Violet", "Daughter of House Baroque"]
+Saber = ["Wandering Sword", "Creation of Project S.A.B.E.R."]
 
-#level 2 One lane or Rotation
-one_lane =
-Rot =
+#level 3 === Lanes or roles I use them ===
+Jungler = {"Aamon" : Aamon, "Alucard" : Alu, "Gusion" : Gus}
+Exp = {"Dyrroth" : Dyr, "Yu Zhong" : Yz, "Zilong" : Zil}
+Roam = {"Tigreal" : Tig, "Rafaela" : Rafa, "Floryn" : Flor}
+Mid = {"Nana" : Nana, "Valentina" : Valen, "Luo Yi" : Luo_Yi}
+Gold = {"Lesley" : Lesley, "Claude" : Claude, "Granger" : Granger}
+Flex = {"Julian" : Julian, "Guinevere" : Guin, "Saber" : Saber}
+
+#level 2 === One lane only vs Rotating the whole map ===
+one_lane = {"Exp Lane" : Exp, "Mid Lane" : Mid, "Gold Lane" : Gold}
+Rot = {"Jungle" : Jungler, "Roamer" : Roam, "Role fill" : Flex}
 
 #level 1 main dictionary
-MLbb = {"Heroes I use with fixed lane": one_lane, "Heroes I use rotating": Rot}
+MLbb = {"Heroes I use with fixed lane": one_lane, "Heroes I use rotating the whole map": Rot}
 
 print("=== 1. Going down one level at a time ===")
 print()
+
 

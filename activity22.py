@@ -1,3 +1,23 @@
+#2d dimnesional list 
+#Naruto = ['Frog Kumite', 'Sage of 6 Path', 'Rasenshuriken']
+#Sasuke = ['Chidori', 'Amentojakara', 'Fire Release']
+#Sakura = ['Healing Ability', 'Cherry Blossom Impact', '']
+#Naruto_shippuden = [Naruto, Sasuke, Sakura]
+#luma = ["Dragon_ball", "One Piece", Naruto_shippuden, "Bleach"]
+#bago = ["Blue Lock", "Jujutsu Kaisen", "Demon Slayer"]
+#korean = ["Solo leveling"]
+
+#anime = {"Old School: ":luma, "New:":bago, "manhwa:":korean}
+
+#print(anime["Old School: "])
+#print(anime["Old School: "][0][-1])
+
+
+# characters = Heroes
+# anime title = Role/lane
+# Release date = map Path
+# anime = MLbb
+
 #Heroes I use in MLBB
 
 #level 4 === Heroes Description or title ===
@@ -38,10 +58,36 @@ Flex = {"Julian" : Julian, "Guinevere" : Guin, "Saber" : Saber}
 one_lane = {"Exp Lane" : Exp, "Mid Lane" : Mid, "Gold Lane" : Gold}
 Rot = {"Jungle" : Jungler, "Roamer" : Roam, "Role fill" : Flex}
 
+
+
+print("HEROES THAT I MAIN IN PARTICULAR ROLES ON MOBILE LEGENDS BANG BANG")
+
+
 #level 1 main dictionary
 MLbb = {"Heroes I use with fixed lane": one_lane, "Heroes I use rotating the whole map": Rot}
 
-print("=== 1. Going down one level at a time ===")
 print()
+print("=== 1. Going down one level at a time ===")
+print(MLbb["Heroes I use rotating the whole map"]["Jungle"]["Aamon"][1])
 
+print()
+print("=== 2. Loop level 1: Categories ===")
+for category in MLbb:
+    print(category)
 
+print()
+print("=== 3. Loop levels 1-2: Categories and lanes ===")
+for category, lanes in MLbb.items():
+    print(category)
+    for lane in lanes:
+        print("  -", lane)
+
+print()
+print("=== 4. Loop all levels ===")
+for category, lane in MLbb.items():
+    print(category)
+    for lane, heroes in lanes.items():
+        print("  " + lane)
+        for name, info in heroes.items():
+            print("    " + name)
+         
